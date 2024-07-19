@@ -19,7 +19,7 @@ toml = "0.5.9"
 serde = { version = "1.0.148", features = ["derive"] }
 tokio-util = { version = "0.7.4", features = ["full"] }
 adblock = { version = "0.6.0" }
-openssl = { version = "0.10.43", features = ["vendored"] }
+openssl = { version = "0.10.64", features = ["vendored"] }
 include_dir = "0.7.3"
 chrono = { version = "0.4.23", features = ["serde"] }
 rustls = { version = "0.20.7" }
