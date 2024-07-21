@@ -12,7 +12,7 @@ name = "privaxy"
 path = "src/server/lib.rs"
 
 [dependencies]
-hyper = { version = "0.14.23", features = ["full"] }
+hyper = { version = "0.14.30", features = ["full"] }
 tokio = { version = "1.22.0", features = ["full"] }
 serde_json = "1.0.120"
 toml = "0.5.9"
