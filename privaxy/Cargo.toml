@@ -25,7 +25,7 @@ chrono = { version = "0.4.23", features = ["serde"] }
 rustls = { version = "0.20.7" }
 futures-util = "0.3.25"
 wildmatch = "2.1.1"
-http = "0.2.8"
+http = "0.2.12"
 mime_guess = "2.0.4"
 tokio-rustls = "0.23.4"
 hyper-rustls = { version = "0.23.1", features = ["http1", "http2"] }
