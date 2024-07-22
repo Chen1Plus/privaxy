@@ -12,12 +12,18 @@ name = "privaxy"
 path = "src/server/lib.rs"
 
 [dependencies]
-hyper = { version = "0.14.30", features = ["full"] }
 tokio = { version = "1.22.0", features = ["full"] }
-serde_json = "1.0.120"
-toml = "0.5.9"
-serde = { version = "1.0.204", features = ["derive"] }
 tokio-util = { version = "0.7.11", features = ["full"] }
+
+http = "0.2.12"
+http-body-util = "0.1.1"
+
+hyper = { version = "0.14.30", features = ["full", "backports", "deprecated"] }
+
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
+
+toml = "0.5.9"
 adblock = { version = "0.6.0" }
 openssl = { version = "0.10.64", features = ["vendored"] }
 include_dir = "0.7.3"
@@ -25,7 +31,6 @@ chrono = { version = "0.4.23", features = ["serde"] }
 rustls = { version = "0.20.7" }
 futures-util = "0.3.25"
 wildmatch = "2.1.1"
-http = "0.2.12"
 mime_guess = "2.0.4"
 tokio-rustls = "0.23.4"
 hyper-rustls = { version = "0.23.1", features = ["http1", "http2"] }
